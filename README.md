@@ -7,11 +7,14 @@ Use it like so:
 
 ```
 
-import dattrs
+/* You MUST import the entire dattrs module, 
+   dont just import `define`.
+*/
+import dattrs;
 
 class wibble
 {
-    mixin dattrs!(["donkey"], string);
+    mixin define!(["donkey"], string);
 }
 
 auto w = new wibble("hello");

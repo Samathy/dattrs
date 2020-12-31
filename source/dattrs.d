@@ -1,5 +1,3 @@
-module dattrs;
-
 template dattrs_this_body(string[] names, ARGS...)
 {
     static string dattrs_this_body()
@@ -27,7 +25,7 @@ template this_args(string[]names, ARGS...)
 }
 
 
-mixin template dattrs(string[] names, ARGS...)
+mixin template define(string[] names, ARGS...)
 {
     mixin("this("~this_args!(names, ARGS)~"){"~dattrs_this_body!(names, ARGS)~"}");
 
@@ -35,10 +33,4 @@ mixin template dattrs(string[] names, ARGS...)
     {
         mixin(t," "~names[i]~";");
     }
-}
-
-
-unittest
-{
-    assert (w.donkey == property_value);
 }
