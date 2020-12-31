@@ -1,0 +1,15 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/dattrs
+dattrs.so
+dattrs.dylib
+dattrs.dll
+dattrs.a
+dattrs.lib
+dattrs-test-*
+*.exe
+*.o
+*.obj
+*.lst

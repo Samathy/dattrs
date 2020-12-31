@@ -1,0 +1,11 @@
+{
+	"authors": [
+		"Samathy Barratt"
+	],
+	"copyright": "Copyright © 2020, Samathy Barratt",
+	"description": "D classes with less boilerplate",
+	"license": "MIT",
+	"name": "dattrs",
+    "targetType": "library",
+    
+}
