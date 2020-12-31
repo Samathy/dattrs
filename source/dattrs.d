@@ -1,6 +1,6 @@
-template dattrs_this_body(string[] names, ARGS...)
+template this_body(string[] names, ARGS...)
 {
-    static string dattrs_this_body()
+    static string this_body()
     {
         string this_body;
         static foreach(int i, t; ARGS)
@@ -27,7 +27,7 @@ template this_args(string[]names, ARGS...)
 
 mixin template define(string[] names, ARGS...)
 {
-    mixin("this("~this_args!(names, ARGS)~"){"~dattrs_this_body!(names, ARGS)~"}");
+    mixin("this("~this_args!(names, ARGS)~"){"~this_body!(names, ARGS)~"}");
 
     static foreach(int i, t; ARGS)
     {
