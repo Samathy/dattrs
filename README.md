@@ -22,3 +22,16 @@ auto w = new wibble("hello");
 writeln(w.donkey); //"hello"
 
 ```
+
+You may also define default values for the attributes,
+and optionally offer a no-parameter constructor.
+
+```
+
+class wibble
+{
+                              name       value  overload type
+    mixin define_defaults!(["donkey"], ["hello"], true, string);
+}
+
+```
