@@ -1,3 +1,5 @@
+module dattrs;
+
 template dattrs_this_body(string[] names, ARGS...)
 {
     static string dattrs_this_body()

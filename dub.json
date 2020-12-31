@@ -7,5 +7,5 @@
 	"license": "MIT",
 	"name": "dattrs",
     "targetType": "library",
-    
+    "mainSourceFile": "source/dattrs/dattrs.d"
 }
